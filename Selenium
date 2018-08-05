@@ -1,4 +1,41 @@
 
+By ID:
+in Java: driver.findElement(By.id("element id"))
+
+2. By CLASS:
+in Java: driver.findElement(By.className("element class"))
+
+3. By NAME:
+in Java: driver.findElement(By.name("element name"))
+
+4. By TAGNAME:
+in Java: driver.findElement(By.tagName("element html tag name"))
+
+5. By CSS Selector:
+in Java: driver.findElement(By.cssSelector("css selector"))
+
+6. By Link:
+in Java: driver.findElement(By.link("link text"))
+
+7. By XPath:
+in Java: driver.findElement(By.xpath("xpath expression"))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------
 Problem Statement:
 I had an application which used to show popups / ads, as shown below, at random. As per the requirement it can be shown anytime 
 (there was some complex business rules behind that. but lets ignore that for the time being). The user had to either click on the 
