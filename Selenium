@@ -1,0 +1,28 @@
+
+Problem Statement:
+I had an application which used to show popups / ads, as shown below, at random. As per the requirement it can be shown anytime 
+(there was some complex business rules behind that. but lets ignore that for the time being). The user had to either click on the 
+close button or take some action on the popup before continuing. It would make our selenium tests fail as this popup will steal the focus.
+It would be annoying for us – but it was generating some revenue for our organization!!
+
+Sol)Below commands might be helpful.
+
+ OpenQA.Selenium.IAlert package. Alert interface gives us following methods to deal with the alert:
+1)Accept() To accept the alert
+2)Dismiss() To dismiss the alert
+3)Text To get the text of the alert
+4)SendKeys() To write some text to the alert
+
+Below is the command used to handle popup window with its name.
+driver.switchTo().window(“”);
+------------------------------
+You can also decline the alert box:
+
+Alert alert = driver.switchTo().alert();
+alert().dismiss();
+----------------------------------------------------------
+Alert alert = driver.switchTo().alert();
+alert.accept();
+--------------------------------------------
+
+
