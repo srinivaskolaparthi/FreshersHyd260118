@@ -19,22 +19,6 @@ in Java: driver.findElement(By.link("link text"))
 
 7. By XPath:
 in Java: driver.findElement(By.xpath("xpath expression"))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ---------------------------------------------------------------------------------
 Problem Statement:
 I had an application which used to show popups / ads, as shown below, at random. As per the requirement it can be shown anytime 
